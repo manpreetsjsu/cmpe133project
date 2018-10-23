@@ -1,8 +1,10 @@
 import React from 'react';
 import {List,Icon,Label,Button,Input} from 'semantic-ui-react';
 import './SideBar.css'
+
 import SellModal from '../sellModal/sellModal';
 import GuestModal from '../sellModal/guestModal';
+
 
 const SideBar = (props) =>{
     const style={
@@ -48,6 +50,7 @@ const SideBar = (props) =>{
                 </List.Item>
 
                 <List.Item className='spacingBetweenItems'>
+
                     { props.loginStatus ?
                     <SellModal>
                             <Button
@@ -67,6 +70,7 @@ const SideBar = (props) =>{
                                 Sell Something
                             </Button>
                         </SellModal>}
+
                 </List.Item>
 
                 <List.Item className='spacingBetweenItems'>
